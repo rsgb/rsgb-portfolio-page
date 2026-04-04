@@ -11,7 +11,7 @@ function Navbar({ navItems, mobileMenuOpen, setMobileMenuOpen }) {
           aria-label="Toggle navigation menu"
           onClick={() => setMobileMenuOpen((value) => !value)}
         >
-          {mobileMenuOpen ? 'Close' : 'Menu'}
+          {mobileMenuOpen ? '✕' : '☰'}
         </button>
 
         <nav className={`main-nav ${mobileMenuOpen ? 'main-nav-open' : ''}`}>
