@@ -1,5 +1,5 @@
 export const profileImage = new URL(
-  "../../assets/images/Rui portfolio site profile pic.png",
+  "../../assets/images/rsgb picture.png",
   import.meta.url
 ).href;
 
