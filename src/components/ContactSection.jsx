@@ -14,16 +14,13 @@ function ContactSection() {
     const formData = new FormData(form)
 
     try {
-      const response = await fetch(
-        'https://formsubmit.co/ajax/2226df55e69f025cdba77c69d35959d9',
-        {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formData,
         headers: {
           Accept: 'application/json',
         },
-        }
-      )
+      })
 
       if (!response.ok) {
         throw new Error('Failed to send message')
@@ -95,8 +92,8 @@ function ContactSection() {
 
           <form className="card form contact-form-card" onSubmit={handleSubmit}>
             <h3 className="contact-form-title">Send a Message</h3>
-            <input type="hidden" name="_subject" value="New portfolio contact message" />
-            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="access_key" value="1bb6bc8e-de0c-4a2e-a704-60f943131dce" />
+            <input type="hidden" name="subject" value="New portfolio contact message" />
             <label>
               <input type="text" name="name" placeholder="Your name" required />
             </label>
