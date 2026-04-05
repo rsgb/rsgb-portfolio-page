@@ -62,19 +62,25 @@ function ContactSection() {
 
           <form
             className="card form contact-form-card"
-            action="mailto:rui.bbb@gmail.com"
+            action="https://formsubmit.co/rui.bbb@gmail.com"
             method="post"
-            encType="text/plain"
           >
             <h3 className="contact-form-title">Send a Message</h3>
+            <input type="hidden" name="_subject" value="New portfolio contact message" />
+            <input type="hidden" name="_captcha" value="false" />
             <label>
-              <input type="text" name="name" placeholder="Your name" />
+              <input type="text" name="name" placeholder="Your name" required />
             </label>
             <label>
-              <input type="email" name="email" placeholder="Your email" />
+              <input type="email" name="email" placeholder="Your email" required />
             </label>
             <label>
-              <textarea name="message" rows="5" placeholder="Tell me about your project" />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project"
+                required
+              />
             </label>
             <button type="submit" className="btn btn-primary">
               <span className="contact-submit-icon" aria-hidden="true">
