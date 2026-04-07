@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import SkillsSection from './components/SkillsSection'
@@ -16,8 +16,22 @@ import {
 } from './data/portfolioData'
 import './App.css'
 
+function getInitialTheme() {
+  const saved = localStorage.getItem('theme')
+  if (saved === 'dark' || saved === 'light') return saved
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [theme, setTheme] = useState(getInitialTheme)
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  const toggleTheme = () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))
 
   return (
     <div className="site-shell">
@@ -25,6 +39,8 @@ function App() {
         navItems={navItems}
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
+        theme={theme}
+        toggleTheme={toggleTheme}
       />
 
       <main>
