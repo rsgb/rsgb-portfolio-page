@@ -827,6 +827,21 @@ h2 {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .hero-section {
+    background:
+      radial-gradient(circle at 80% 35%, rgba(139, 131, 255, 0.12), transparent 35%),
+      radial-gradient(circle at 20% 20%, rgba(139, 131, 255, 0.08), transparent 45%);
+  }
+
+  :root:not([data-theme="light"]) .hero-photo-ring {
+    box-shadow: 0 30px 60px rgba(180, 190, 220, 0.2);
+  }
+
+  :root:not([data-theme="light"]) .github-btn {
+    border-color: #dce1ef;
+    border-width: 0.5px;
+  }
+
   :root:not([data-theme="light"]) .btn-primary,
   :root:not([data-theme="light"]) .preview-btn {
     background: #f5f8ff;
@@ -839,6 +854,21 @@ h2 {
     background: #d3d9ed;
     border-color: #d3d9ed;
   }
+}
+
+:root[data-theme="dark"] .hero-section {
+  background:
+    radial-gradient(circle at 80% 35%, rgba(139, 131, 255, 0.12), transparent 35%),
+    radial-gradient(circle at 20% 20%, rgba(139, 131, 255, 0.08), transparent 45%);
+}
+
+:root[data-theme="dark"] .hero-photo-ring {
+  box-shadow: 0 30px 60px rgba(180, 190, 220, 0.2);
+}
+
+:root[data-theme="dark"] .github-btn {
+  border-color: #dce1ef;
+  border-width: 0.5px;
 }
 
 :root[data-theme="dark"] .btn-primary,

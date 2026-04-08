@@ -27,8 +27,8 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg-color: #0d101a;
-    --surface: #1e2740;
-    --surface-soft: #263050;
+    --surface: #151b28;
+    --surface-soft: #1a2232;
     --section-alt: #0f1523;
     --text-color: #d3d9ed;
     --heading-color: #f5f8ff;
