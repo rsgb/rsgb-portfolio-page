@@ -27,8 +27,8 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg-color: #0d101a;
-    --surface: #141a27;
-    --surface-soft: #1c2435;
+    --surface: #1e2740;
+    --surface-soft: #263050;
     --section-alt: #0f1523;
     --text-color: #d3d9ed;
     --heading-color: #f5f8ff;
@@ -43,8 +43,8 @@
 
 :root[data-theme="dark"] {
   --bg-color: #0d101a;
-  --surface: #141a27;
-  --surface-soft: #1c2435;
+  --surface: #1e2740;
+  --surface-soft: #263050;
   --section-alt: #0f1523;
   --text-color: #d3d9ed;
   --heading-color: #f5f8ff;
