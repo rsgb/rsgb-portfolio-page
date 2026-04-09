@@ -16,20 +16,25 @@ import {
 } from './data/portfolioData'
 import './App.css'
 
-function getInitialTheme() {
-  const saved = localStorage.getItem('theme')
-  if (saved === 'dark' || saved === 'light') return saved
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+const darkMq = window.matchMedia('(prefers-color-scheme: dark)')
+
+function getOsTheme() {
+  return darkMq.matches ? 'dark' : 'light'
 }
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [theme, setTheme] = useState(getInitialTheme)
+  const [theme, setTheme] = useState(getOsTheme)
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
-    localStorage.setItem('theme', theme)
   }, [theme])
+
+  useEffect(() => {
+    const handler = () => setTheme(getOsTheme())
+    darkMq.addEventListener('change', handler)
+    return () => darkMq.removeEventListener('change', handler)
+  }, [])
 
   const toggleTheme = () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))
 
