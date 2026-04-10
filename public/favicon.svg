@@ -1,15 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RB favicon">
-  <rect width="64" height="64" rx="14" fill="#0f1115" />
-  <text
-    x="11"
-    y="43"
-    fill="#f5f7ff"
-    font-family="Manrope, Inter, 'SF Pro Display', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif"
-    font-size="30"
-    font-weight="700"
-    letter-spacing="-0.6"
-  >
-    RB
-  </text>
-  <circle cx="50" cy="15" r="4.5" fill="#35d07f" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rui Braga">
+  <rect width="64" height="64" rx="14" fill="#12141c"/>
+  <path fill="#f7f5ef" transform="translate(6.729 55.000) scale(0.0399 -0.0399)" d="M143 0V828Q143 917 140.5 976.5Q138 1036 135 1082H403Q406 1064 411.0 972.5Q416 881 416 851H420Q461 965 493.0 1011.5Q525 1058 569.0 1080.5Q613 1103 679 1103Q733 1103 766 1088V853Q698 868 646 868Q541 868 482.5 783.0Q424 698 424 531V0Z"/>
+  <circle cx="46.686" cy="49.800" r="5.2" fill="#35d07f"/>
 </svg>
