@@ -11,7 +11,7 @@ function HeroSection({ profileImage }) {
           </p>
           <h1>Rui Braga</h1>
           <p className="hero-lead">
-            I build websites and automations that help small businesses work better.
+            I build websites and automations that help people and projects work better.
           </p>
 
           <div className="hero-actions">

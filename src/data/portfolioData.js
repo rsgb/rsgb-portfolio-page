@@ -20,7 +20,7 @@ export const skillGroups = [
   {
     icon: "frontend",
     title: "Frontend",
-    skills: ["Responsive Design", "Component Architecture", "UI Implementation"],
+    skills: ["Responsive Layouts", "Multilingual Sites", "Contact Forms", "Dark Mode", "Accessible UI"],
   },
   {
     icon: "automation",
@@ -41,19 +41,19 @@ export const skillGroups = [
 
 export const experienceItems = [
   {
-    role: "AI Workflows & Business Automation",
+    role: "AI & Automation Projects",
     details:
-      "Built automation systems for practical business needs: audio-to-meeting-notes pipelines, email-to-calendar sync, and lead-generation workflows that scrape, score, and organize prospects daily. Deployed and maintained on AWS and Hetzner for reliable remote access.",
+      "Built practical automations for business needs: an audio-to-meeting-notes pipeline, email-to-calendar sync, and a lead-generation workflow that scrapes, scores, and organizes prospects daily. Deployed and maintained on AWS and Hetzner for reliable remote access.",
   },
   {
-    role: "Websites for Small Businesses & Freelancers",
+    role: "Freelance Web Development",
     details:
       "Built websites and portfolio pages for clients in real estate, construction, and bodywork, each designed to present their business clearly and work well on any device.",
   },
   {
-    role: "Open-Source Contributor - One Army",
+    role: "One Army",
     details:
-      "Contributing frontend features and UI improvements to One Army’s community platform, an active open-source project built with React and maintained through collaborative development on GitHub.",
+      "Open-source contributor to One Army — the React platform behind Precious Plastic and other environmental projects. Ongoing UI and frontend feature work on GitHub.",
   },
 ];
 
@@ -61,7 +61,7 @@ export const projects = [
   {
     title: "Bodywork Portfolio",
     description:
-      "A multilingual portfolio site for a bodywork therapist, with a contact form and a calm, professional feel designed to build trust with new clients.",
+      "A multilingual portfolio for a bodywork therapist. Built in React with a language switcher, a contact form wired to email, and a mobile-first layout — most of his prospective clients browse on their phones.",
     tech: ["React", "Multilingual", "Contact Form"],
     github: "https://github.com/rsgb/elias-bodywork",
     image: new URL("../../assets/images/Bodywork/bodywork 1.png", import.meta.url)
@@ -95,7 +95,7 @@ export const projects = [
   {
     title: "Construction Business Website",
     description:
-      "A business website for a small construction and renovation company, designed to present services clearly and make it easy for customers to get in touch.",
+      "A single-page site for a construction and renovation company. Structured around a clear services list and a prominent contact path, so first-time visitors can see what's offered and get in touch in one step.",
     tech: ["React", "Business Site", "Contact Integration"],
     github: "https://github.com/rsgb/obras-remodelacoes-spa",
     image: new URL(
@@ -136,7 +136,7 @@ export const projects = [
   {
     title: "Real Estate Website",
     description:
-      "A multilingual website for a real estate agent, focused on presenting properties clearly and projecting the professionalism clients expect.",
+      "A multilingual site for a real estate agent. EN/PT/ES/FR language switching, and a layout tuned to look professional on both desktop and mobile — the two contexts where clients first meet an agent online.",
     tech: ["React", "Multilingual", "Property Listings"],
     github: "https://github.com/rsgb/paulo-braga-real-estate",
     image: new URL(
@@ -170,6 +170,5 @@ export const projects = [
 
 export const contactLinks = {
   email: "rui.bbb@gmail.com",
-  linkedin: "linkedin.com/in/yourname",
   github: "github.com/rsgb",
 };

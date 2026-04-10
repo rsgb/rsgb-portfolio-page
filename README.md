@@ -2,11 +2,11 @@
 
 A personal portfolio website built with React and Vite to present:
 
-- frontend work for small businesses and freelancers
+- frontend work that helps people and projects work better
 - open-source contribution to One Army
 - practical AI workflow and automation projects
 
-The site is written to be clear, trustworthy, and client-focused, with project examples from real business contexts.
+The site is written to be clear, trustworthy, and client-focused, with project examples from real contexts.
 
 ## Tech Stack
 
@@ -20,10 +20,10 @@ The site is written to be clear, trustworthy, and client-focused, with project e
 - Hero (positioning and availability)
 - Technical Skills
 - Experience
-- Featured Projects
+- Selected Work
 - Contact
 
-## Featured Project Types
+## Selected Work
 
 - Bodywork freelancer portfolio (multilingual)
 - Construction and renovation business website

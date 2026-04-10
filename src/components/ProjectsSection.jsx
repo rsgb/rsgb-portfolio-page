@@ -94,7 +94,7 @@ function ProjectsSection({ projects }) {
     <section id="projects" className="section">
       <div className="container">
         <SectionTitle
-          title="Featured Projects"
+          title="Selected Work"
           subtitle="Websites I've built for clients in wellness, construction, and real estate."
         />
         <div className="card-grid">
