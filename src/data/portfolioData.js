@@ -131,7 +131,7 @@ export const projects = [
   {
     title: "Real Estate Website",
     description:
-      "A multilingual site for a real estate agent. EN/PT/ES/FR language switching, and a layout tuned to look professional on both desktop and mobile — the two contexts where clients first meet an agent online.",
+      "A multilingual site for a real estate agent, with a layout tuned to look professional on both desktop and mobile — the two contexts where clients first meet an agent online.",
     tech: ["React", "Multilingual", "Property Listings"],
     github: "https://github.com/rsgb/paulo-braga-real-estate",
     image: new URL(
