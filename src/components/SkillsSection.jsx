@@ -48,30 +48,6 @@ function SkillIcon({ icon }) {
     )
   }
 
-  if (icon === 'frontend') {
-    return (
-      <svg viewBox="0 0 24 24" focusable="false">
-        <rect
-          x="3"
-          y="4"
-          width="18"
-          height="14"
-          rx="2"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
-        <path
-          d="M8 20h8M10 18v2M14 18v2"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-      </svg>
-    )
-  }
-
   if (icon === 'automation') {
     return (
       <svg viewBox="0 0 24 24" focusable="false">

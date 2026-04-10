@@ -18,11 +18,6 @@ export const skillGroups = [
     skills: ["JavaScript", "TypeScript", "HTML", "CSS", "React"],
   },
   {
-    icon: "frontend",
-    title: "Frontend",
-    skills: ["Responsive Layouts", "Multilingual Sites", "Contact Forms", "Dark Mode", "Accessible UI"],
-  },
-  {
     icon: "automation",
     title: "AI & Automation",
     skills: [
